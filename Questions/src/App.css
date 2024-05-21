@@ -3,17 +3,54 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: transparent;
+}
+.game-container{
+  border: 3px solid #000;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(154,12,172,1) 0%, rgba(42,19,106,1) 100%);
+  text-wrap: wrap;
 }
 
-
-
+.game-container h3{
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 130, .8);
+  max-width: 500px;
+  
+}
+.game-container h2{
+  text-decoration: underline;
+}
 .card {
   padding: 2em;
 }
-
 .correct:focus{
   background-color: green;
 }
 .incorrect:focus{
   background-color: red;
+}
+.ans-container  {
+  margin: 20px;
+  background-color: rgba(20, 20, 50, .8);
+  border-radius: 20px;
+  padding: 5px;
+}
+.ans-container li {
+  margin: 5px;
+  list-style: none;
+  max-width: 500px;
+}
+.score{
+  display: block;
+  align-content: center;
+  margin: 10px auto;
+  padding: 0;
+  width: 200px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background-color: #33ee;
 }

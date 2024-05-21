@@ -34,8 +34,8 @@ function Card({quizStatus, setQuizStatus, handleMore}) {
         <h1>The Questions Game</h1>
         <h2>Question Nº{quizStatus + 1}</h2>
         <h3>{question.question}</h3>
-        <ul>
-          <AnsList
+        <ul className= "ans-container">
+          <AnsList 
           handleMore= {handleMore}
           ans1={question.answer1}
           ans2={question.answer2}
@@ -65,7 +65,7 @@ function Title(){
   return(
     <>
     <h1>Game Over</h1>
-    <p>Thanks for playing</p>
+    <p>Thanks for playing <br /> refresh page </p>
     </>
   )
 }
@@ -78,7 +78,7 @@ function App() {
   }
   return (
     <>
-    <div>
+    <div className='game-container'>
      {(quizStatus < questions.length ) ?(
      <Card
      quizStatus={quizStatus}
@@ -87,7 +87,7 @@ function App() {
      ></Card>
      ) : (<Title></Title>)}
     </div>
-    <h2> Your score {point}</h2>
+    <h2 className='score'> Your score {point}</h2>
     </>
     
     
