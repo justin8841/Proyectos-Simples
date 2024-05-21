@@ -61,8 +61,6 @@ function AnsList({ ans1, ans2, ans3, handleMore}) {
 }
   
 
-
-
 function Title(){
   return(
     <>
